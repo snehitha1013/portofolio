@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,48 +10,9 @@
     <title>Snehitha's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <style>
-        .hero-section p {
-            animation: fadeInUp 2s ease-out;
-        }
-
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero-section img {
-            max-width: 200px;
-            border-radius: 50%;
-            margin-top: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .coming-soon {
-            text-align: center;
-            font-size: 1.3rem;
-            font-weight: 500;
-            background: #f0f0f0;
-            padding: 20px;
-            border-radius: 10px;
-            animation: pulse 2s infinite;
-            margin-top: 20px;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); opacity: 0.9; }
-            50% { transform: scale(1.03); opacity: 1; }
-            100% { transform: scale(1); opacity: 0.9; }
-        }
-    </style>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <header id="home">
@@ -65,16 +27,18 @@
         </nav>
         <div class="hero-section">
             <h1>Hi, I'm Snehitha</h1>
-            <p>Web Developer | Creating Beautiful & Functional Websites</p>
-            <img src="your-photo.jpg" alt="Snehitha's Photo">
+            <p class="animated-text">Web Developer | Creating Beautiful & Functional Websites</p>
+            <img src="WhatsApp Image 2024-08-06 at 21.10.21_dd5f5a09.jpg" alt="Snehitha's Photo" class="hero-img">
             <a href="#projects" class="btn">View Projects</a>
         </div>
     </header>
 
     <section id="about">
-        <div class="section-container">
+        <div class="section-container about-container">
+            <div class="about-text">
             <h2>About Me</h2>
             <p>I'm Snehitha, a passionate web developer with a focus on creating clean, responsive, and user-friendly websites. I specialize in HTML, CSS, JavaScript, and more. I am always eager to learn and grow my skills.</p>
+        </div>
         </div>
     </section>
 
@@ -95,7 +59,8 @@
     <section id="projects">
         <div class="section-container">
             <h2>Projects</h2>
-            <p class="coming-soon">🚧 Projects are coming soon. Stay tuned!</p>
+            <p class="coming-soon">🚀✨ Projects are coming soon. Stay tuned! 👀📅</p>
+
         </div>
     </section>
 
@@ -122,4 +87,5 @@
     </footer>
 
 </body>
+
 </html>
