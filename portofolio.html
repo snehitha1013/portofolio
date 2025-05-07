@@ -1,75 +1,125 @@
 
-<!doctype html>
-<html>
-    <head>
-        <title>My Protofolio</title>
-    </head>
-    <body>
-        <header>
-            <h1>Welcome to my portofolio</h1>
-            <p>This is where I showcase my work and projects</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-
-                </ul>
-            </nav>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Hello, my name is Snehitah. I am a web developer with a passion for creating beautiful, functional websites. I have experience working with HTML, CSS, JavaScript, and more.</p>
-                <p>I enjoy learning new technologies and staying up-to-date with the latest trends in web development.</p>
-            </section>
-            <section id="projects">
-                <h2>Projects</h2>
-                <p>Coming soon</p>
-            </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <p>Here are some of the technologies I am proficient in:</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Git & GitHub</li>
-                </ul>
-            </section>
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <p>If you'd like to get in touch, feel free to reach out to me through any of the following methods:</p>
-                
-                
-                <ul>
-                    <li>Email: <a href="snehitha1013@gmail.com">snehitha1013@gmail.com</a></li>
-                    <li>Phone: 6302565997</li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/snehitha1013" target="_blank">linkedin.com/in/snehitha1013</a></li>
-
-                </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Snehitha's personal portfolio website">
+    <title>Snehitha's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     
-                <h3>Contact Form</h3>
-                <form action="#" method="post">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name"><br><br>
-        
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br><br>
-        
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message"></textarea><br><br>
-        
-                    <input type="submit" value="Submit">
-                    
-                </form>
+    <style>
+        .hero-section p {
+            animation: fadeInUp 2s ease-out;
+        }
 
-            </section>
-            <footer>
-                <p>Copyright © 2025 John Doe</p>
-            </footer>
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-        </header>
-    </body>
+        .hero-section img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .coming-soon {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 500;
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            animation: pulse 2s infinite;
+            margin-top: 20px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.03); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.9; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="home">
+        <nav>
+            <div class="logo">Snehitha</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-section">
+            <h1>Hi, I'm Snehitha</h1>
+            <p>Web Developer | Creating Beautiful & Functional Websites</p>
+            <img src="your-photo.jpg" alt="Snehitha's Photo">
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="section-container">
+            <h2>About Me</h2>
+            <p>I'm Snehitha, a passionate web developer with a focus on creating clean, responsive, and user-friendly websites. I specialize in HTML, CSS, JavaScript, and more. I am always eager to learn and grow my skills.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Git & GitHub</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-container">
+            <h2>Projects</h2>
+            <p class="coming-soon">🚧 Projects are coming soon. Stay tuned!</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-container">
+            <h2>Contact Me</h2>
+            <p style="text-align: center;">If you'd like to collaborate or just chat, feel free to reach out to me via the details below:</p>
+            <ul>
+                <li>Email: <a href="mailto:snehitha1013@gmail.com">snehitha1013@gmail.com</a></li>
+                <li>Phone: +1 630-256-5997</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/snehitha1013" target="_blank">linkedin.com/in/snehitha1013</a></li>
+            </ul>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Snehitha. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
